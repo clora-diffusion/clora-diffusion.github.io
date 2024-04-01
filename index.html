@@ -112,22 +112,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -158,198 +142,105 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Paper abstract -->
-<!-- <section class="section hero is-light">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Motivation</h2>
         <div class="columns is-centered">
-        <img src="static/images/AttentionVisualization.png" alt=""/>
+        <img src="static/images/AttentionVisualization.jpg" alt=""/>
         </div>
         <div class="content has-text-justified">
           <p>
-            The output might neglect certain subjects, as in the 'a bear and an elephant' prompt, where the bear is ignored as depicted in Figure (a). Additionally, the model might mix up attributes, such as mixing the colors in the 'a purple crown and a yellow suitcase' prompt as seen in Figure (b). Another behavior that is often attributed to the imprecise language comprehension of the CLIP text encoder is the failure to produce the correct quantity of subjects as in Figure (c) where the model either produces an excessive number of cats (SD) or failed to include a cat (Imagen) for 'one dog and two cats' prompt.
+            Attention overlap and attribute binding issues in merging multiple LoRA models (a). The integration of multiple LoRA approaches often results in the failure to accurately represent both concepts, as their attention mechanisms tend to overlap. Our technique, however, adjusts the attention maps during test-time to distinctly segregate different LoRA models, thereby producing compositions that accurately reflect the intended concepts (b).
           </p>
         </div>
       </div>
     </div>
   </div>
-</section> -->
-<!-- End paper abstract -->
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework</h2>
+        <div class="columns is-centered">
+        <img src="static/images/framework.jpg" alt=""/>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Illustration of our method, CLoRA, that combines LoRAs (Low-Rank Adaptation models) using attention maps to guide Stable Diffusion image generation with user-defined concepts. The process involves prompt breakdown, attention-guided diffusion, and contrastive loss for consistency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-<!--       <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
-        <img src="static/images/main_comparison.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/main_figure.jpg" alt="main figure"/>
         <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
+          Qualitative comparison of CLoRA.
         </h2>
       </div>
-       <div class="item">
-        <img src="static/images/supplementary_sd_page_0.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
-        </h2>
-      </div>
+      <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
-        <img src="static/images/supplementary_sd_page_1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/style.jpg" alt="main figure"/>
         <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
+          Qualitative comparison of CLoRA on style LoRAs.
         </h2>
       </div>
-      <div class="item">
-        <img src="static/images/supplementary_sd_page_2.jpg" alt="MY ALT TEXT"/>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+        <img src="static/images/2loras.jpg" alt="main figure"/>
         <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
+          Qualitative comparison of CLoRA.
         </h2>
       </div>
-      <div class="item">
-        <img src="static/images/supplementary_sd_page_3.jpg" alt="MY ALT TEXT"/>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+        <img src="static/images/3loras1.jpg" alt="main figure"/>
         <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
+          Qualitative comparison of CLoRA using 3 LoRAs.
         </h2>
       </div>
-      <div class="item">
-        <img src="static/images/supplementary_sd_page_4.jpg" alt="MY ALT TEXT"/>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+        <img src="static/images/3loras2.jpg" alt="main figure"/>
         <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
+          Qualitative comparison of CLoRA using 3 LoRAs.
         </h2>
       </div>
-      <div class="item">
-        <img src="static/images/supplementary_sd_page_5.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/supplementary_sd_page_6.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/supplementary_sd_page_7.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM on Stable Diffusion-based methods.
-        </h2>
-      </div> -->
-      
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
-<!-- Image carousel -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-<!--       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-        <img src="static/images/main_comparison_imagen.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-       <div class="item">
-        <img src="static/images/supplementary_imagen_page_0.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-        <div class="item">
-        <img src="static/images/supplementary_imagen_page_1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/supplementary_imagen_page_2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/supplementary_imagen_page_3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/supplementary_imagen_page_4.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/supplementary_imagen_page_5.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-      <div class="item">
-        
-        <img src="static/images/supplementary_imagen_page_6.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div>
-      <div class="item">
-        
-        <img src="static/images/supplementary_imagen_page_7.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative comparison of CONFORM with Imagen.
-        </h2>
-      </div> -->
-      
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light"> -->
-<!--   <div class="hero-body"> -->
-<!--     <div class="container"> -->
-      <!-- Paper video. -->
-<!--       <h2 class="title is-3">Video Presentation</h2> -->
-<!--       <div class="columns is-centered has-text-centered"> -->
-<!--         <div class="column is-four-fifths"> -->
-          
-<!--           <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-<!--             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-<!--           </div> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> -->
-<!-- End youtube video -->
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Ablation Study</h2>
+        <div class="columns is-centered">
+        <img src="static/images/Ablation.jpg" alt=""/>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            CLoRA Ablation Study. Using the L1 cat and L2 dog LoRAs, the effects of two techniques (latent update and latent masking) can be observed.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+
 
 
 <!--BibTex citation -->
@@ -361,7 +252,6 @@
       </code></pre>
     </div>
 </section>
-  
 <!--End BibTex citation -->
 
 
