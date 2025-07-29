@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="A Contrastive Approach to Compose Multiple LoRA Models">
-  <meta property="og:title" content="CLoRA"/>
-  <meta property="og:description" content="A Contrastive Approach to Compose Multiple LoRA Models"/>
-  <meta property="og:url" content="https://clora-diffusion.github.io/"/>
+  <meta name="description" content="Contrastive Test-Time Composition of Multiple LoRA Models for Image Generation">
+  <meta property="og:title" content="CLoRA" />
+  <meta property="og:description"
+    content="Contrastive Test-Time Composition of Multiple LoRA Models for Image Generation" />
+  <meta property="og:url" content="https://clora-diffusion.github.io/" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/images/teaser.png" />
-  <meta property="og:image:width" content="2880"/>
-  <meta property="og:image:height" content="1010"/>
+  <meta property="og:image:width" content="2880" />
+  <meta property="og:image:height" content="1010" />
 
 
   <meta name="twitter:title" content="CLoRA">
-  <meta name="twitter:description" content="A Contrastive Approach to Compose Multiple LoRA Models">
+  <meta name="twitter:description"
+    content="Contrastive Test-Time Composition of Multiple LoRA Models for Image Generation">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/teaser.png">
   <meta name="twitter:card" content="static/images/teaser.png">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="A Contrastive Approach to Compose Multiple LoRA Models">
+  <meta name="keywords" content="Contrastive Test-Time Composition of Multiple LoRA Models for Image Generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <title>CLoRA</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -52,7 +53,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><b>CLoRA</b>: A <u>C</u>ontrastive Approach to Compose Multiple <u>LoRA</u> Models</h1>
+            <h1 class="title is-1 publication-title"><b>CLoRA</b>: <u>C</u>ontrastive Test-Time Composition of Multiple
+              <u>LoRA</u> Models for Image Generation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -74,167 +76,206 @@
               <span class="author-block"><sup>2</sup>ETH Zürich - DALAB</span><br />
               <span class="author-block"><sup>3</sup>Google</span><br />
               <span class="author-block"><sup>4</sup>TUM</span>
-              
+
             </div>
 
-             <div class="column has-text-centered">
+            <div class="column has-text-centered">
               <sup>&#9733;</sup>Equal contribution.
-             </div>
-            
+            </div>
+
             <div class="column has-text-centered">
               <div class="publication-links">
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2403.19776" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <!-- ICCV 2025 Link -->
+                <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-success">
+                    <span class="icon">
+                      <i class="fas fa-trophy"></i>
+                    </span>
+                    <span>ICCV 2025 Highlight</span>
+                  </a>
+                </span>
+
                 <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                <span class="link-block">
+                  <a href="https://github.com/gemlab-vt/clora" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (Coming Soon)</span>
+                    <span>Code</span>
                   </a>
                 </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <img src="static/images/teaser.png" alt="" />
+        </div>
+        <h2 class="subtitle has-text-centered">
+          CLoRA is a training-free method that works on test-time, and uses contrastive learning to compose multiple
+          concept and style LoRAs simultaneously. Using pre-trained LoRA models, such as L4 for a black and white cat
+          and L2 for a specific type of flower, the goal is to create an image that accurately represents both concepts
+          described by the respective LoRAs. However, directly combining these LoRA models to craft the image often
+          leads to poor outcomes (see LoRA Merge). This failure primarily arises because the attention mechanism fails
+          to create coherent attention maps for subjects and their corresponding attributes. CLoRA revises the attention
+          maps to clearly separate the attentions associated with distinct concept LoRAs (depicted as Ours).
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Low-Rank Adaptations (LoRAs) have emerged as a powerful and popular technique in the field of image
+              generation, offering a highly effective way to adapt and refine pre-trained deep learning models for
+              specific tasks without the need for comprehensive retraining. By employing pre-trained LoRA models, such
+              as those representing a specific cat and a particular dog, the objective is to generate an image that
+              faithfully embodies both animals as defined by the LoRAs. However, the task of seamlessly blending
+              multiple concept LoRAs to capture a variety of concepts in one image proves to be a significant challenge.
+              Common approaches often fall short, primarily because the attention mechanisms within different LoRA
+              models overlap, leading to scenarios where one concept may be completely ignored (e.g., omitting the dog)
+              or where concepts are incorrectly combined (e.g., producing an image of two cats instead of one cat and
+              one dog). To overcome these issues, CLoRA addresses them by updating the attention maps of multiple LoRA
+              models and leveraging them to create semantic masks that facilitate the fusion of latent representations.
+              Our method enables the creation of composite images that truly reflect the characteristics of each LoRA,
+              successfully merging multiple concepts or styles. Our comprehensive evaluations, both qualitative and
+              quantitative, demonstrate that our approach outperforms existing methodologies, marking a significant
+              advancement in the field of image generation with LoRAs. Furthermore, we share our source code, benchmark
+              dataset, and trained LoRA models to promote further research on this topic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Motivation</h2>
+          <div class="columns is-centered">
+            <img src="static/images/AttentionVisualization.jpg" alt="" />
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              Attention overlap and attribute binding issues in merging multiple LoRA models (a). The integration of
+              multiple LoRA approaches often results in the failure to accurately represent both concepts, as their
+              attention mechanisms tend to overlap. Our technique, however, adjusts the attention maps during test-time
+              to distinctly segregate different LoRA models, thereby producing compositions that accurately reflect the
+              intended concepts (b).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Framework</h2>
+          <div class="columns is-centered">
+            <img src="static/images/framework.png" alt="" />
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              Illustration of our method, CLoRA, that combines LoRAs (Low-Rank Adaptation models) using attention maps
+              to guide Stable Diffusion image generation with user-defined concepts. The process involves prompt
+              breakdown, attention-guided diffusion, and contrastive loss for consistency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
     <div class="hero-body">
-      <div class="columns is-centered">
-      <img src="static/images/teaser.png" alt=""/>
-      </div>
-      <h2 class="subtitle has-text-centered">
-        CLoRA is a training-free method that works on test-time, and uses contrastive learning to compose multiple concept and style LoRAs simultaneously. Using pre-trained LoRA models, such as L4 for a black and white cat and L2 for a specific type of flower, the goal is to create an image that accurately represents both concepts described by the respective LoRAs. However, directly combining these LoRA models to craft the image often leads to poor outcomes (see LoRA Merge). This failure primarily arises because the attention mechanism fails to create coherent attention maps for subjects and their corresponding attributes. CLoRA revises the attention maps to clearly separate the attentions associated with distinct concept LoRAs (depicted as Ours). 
-      </h2>
-    </div>
-  </div>
-</section>
-  
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Low-Rank Adaptations (LoRAs) have emerged as a powerful and popular technique in the field of image generation, offering a highly effective way to adapt and refine pre-trained deep learning models for specific tasks without the need for comprehensive retraining. By employing pre-trained LoRA models, such as those representing a specific cat and a particular dog, the objective is to generate an image that faithfully embodies both animals as defined by the LoRAs. However, the task of seamlessly blending multiple concept LoRAs to capture a variety of concepts in one image proves to be a significant challenge. Common approaches often fall short, primarily because the attention mechanisms within different LoRA models overlap, leading to scenarios where one concept may be completely ignored (e.g., omitting the dog) or where concepts are incorrectly combined (e.g., producing an image of two cats instead of one cat and one dog). To overcome these issues, CLoRA addresses them by updating the attention maps of multiple LoRA models and leveraging them to create semantic masks that facilitate the fusion of latent representations. Our method enables the creation of composite images that truly reflect the characteristics of each LoRA, successfully merging multiple concepts or styles. Our comprehensive evaluations, both qualitative and quantitative, demonstrate that our approach outperforms existing methodologies, marking a significant advancement in the field of image generation with LoRAs. Furthermore, we share our source code, benchmark dataset, and trained LoRA models to promote further research on this topic. 
-          </p>
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/main_figure.jpg" alt="main figure" />
+            <h2 class="subtitle has-text-centered">
+              Qualitative comparison of CLoRA.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/style.jpg" alt="main figure" />
+            <h2 class="subtitle has-text-centered">
+              Qualitative comparison of CLoRA on style LoRAs.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/3loras1.jpg" alt="main figure" />
+            <h2 class="subtitle has-text-centered">
+              Qualitative comparison of CLoRA using 3 LoRAs.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/3loras2.jpg" alt="main figure" />
+            <h2 class="subtitle has-text-centered">
+              Qualitative comparison of CLoRA using 3 LoRAs.
+            </h2>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+  <!-- End image carousel -->
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Motivation</h2>
-        <div class="columns is-centered">
-          <img src="static/images/AttentionVisualization.jpg" alt=""/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            Attention overlap and attribute binding issues in merging multiple LoRA models (a). The integration of multiple LoRA approaches often results in the failure to accurately represent both concepts, as their attention mechanisms tend to overlap. Our technique, however, adjusts the attention maps during test-time to distinctly segregate different LoRA models, thereby producing compositions that accurately reflect the intended concepts (b).
-          </p>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Ablation Study</h2>
+          <div class="columns is-centered">
+            <img src="static/images/Ablation.jpg" alt="" />
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              CLoRA Ablation Study. Using the L1 cat and L2 dog LoRAs, the effects of two techniques (latent update and
+              latent masking) can be observed.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Framework</h2>
-        <div class="columns is-centered">
-          <img src="static/images/framework.png" alt=""/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            Illustration of our method, CLoRA, that combines LoRAs (Low-Rank Adaptation models) using attention maps to guide Stable Diffusion image generation with user-defined concepts. The process involves prompt breakdown, attention-guided diffusion, and contrastive loss for consistency.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="static/images/main_figure.jpg" alt="main figure"/>
-          <h2 class="subtitle has-text-centered">
-            Qualitative comparison of CLoRA.
-          </h2>
-        </div>
-        <div class="item">
-          <img src="static/images/style.jpg" alt="main figure"/>
-          <h2 class="subtitle has-text-centered">
-            Qualitative comparison of CLoRA on style LoRAs.
-          </h2>
-        </div>
-        <div class="item">
-          <img src="static/images/3loras1.jpg" alt="main figure"/>
-          <h2 class="subtitle has-text-centered">
-            Qualitative comparison of CLoRA using 3 LoRAs.
-          </h2>
-        </div>
-        <div class="item">
-          <img src="static/images/3loras2.jpg" alt="main figure"/>
-          <h2 class="subtitle has-text-centered">
-            Qualitative comparison of CLoRA using 3 LoRAs.
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End image carousel -->
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Ablation Study</h2>
-        <div class="columns is-centered">
-        <img src="static/images/Ablation.jpg" alt=""/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            CLoRA Ablation Study. Using the L1 cat and L2 dog LoRAs, the effects of two techniques (latent update and latent masking) can be observed.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
-<!--BibTex citation -->
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
@@ -249,27 +290,31 @@
       }
       </code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
 
